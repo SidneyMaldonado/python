@@ -1,6 +1,8 @@
 import cairo 
 import math
-  
+
+#https://pycairo.readthedocs.io/en/latest/reference/context.html?highlight=line_to#cairo.Context.line_to
+
 def arrow(context, x, y, width, height, a, b): 
     context.move_to(x, y + b) 
     context.line_to(x, y + height - b) 
